@@ -59,7 +59,7 @@
             },
             "hmr": {
               "hmr": true,
-              "browserTarget": "angular:build:hmr"
+              "browserTarget": "angular2-material-dashboard-pro:build:hmr"
             }
           }
         },

@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 
@@ -15,6 +15,8 @@ import { DashboardModule } from "./dashboard/dashboard.module";
 import { LoginComponent } from "./page/login/login.component";
 import { LockComponent } from "./page/lock/lock.component";
 import { RegisterComponent } from "./page/register/register.component";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -29,10 +31,13 @@ import { RegisterComponent } from "./page/register/register.component";
     AppRoutingModule,
     NgxsModule.forRoot([]),
     BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
     PublicModule,
     DashboardModule
   ],
   providers: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
 export class AppModule implements NgxsHmrLifeCycle<Snapshot> {
