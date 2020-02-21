@@ -25,34 +25,32 @@ import { MatRadioModule } from "@angular/material/radio";
 import { MatCheckboxModule } from "@angular/material/checkbox";
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    ProfileComponent,
-    NavbarComponent,
-    FigurecardComponent,
-    ImagecardComponent,
-    TableComponent,
-    NotificationComponent,
-    MsgIconBtnComponent,
-    SweetAlertComponent,
-    HeaderComponent,
-    FooterComponent,
-    SettingsComponent,
-    PriceTableComponent,
-    PanelsComponent,
-    WizardComponent
-  ],
-  imports: [
-    CommonModule,
-    ContentRoutingModule,
-    MatMenuModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    MatRadioModule,
-    MatInputModule,
-    MatMenuModule,
-    MatCheckboxModule
-  ]
+    declarations: [
+        HomeComponent,
+        ProfileComponent,
+        FigurecardComponent,
+        ImagecardComponent,
+        TableComponent,
+        NotificationComponent,
+        SweetAlertComponent,
+        HeaderComponent,
+        FooterComponent,
+        SettingsComponent,
+        PriceTableComponent,
+        PanelsComponent,
+        WizardComponent
+    ],
+    imports: [
+        CommonModule,
+        ContentRoutingModule,
+        MatMenuModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatButtonModule,
+        MatRadioModule,
+        MatInputModule,
+        MatMenuModule,
+        MatCheckboxModule
+    ]
 })
 export class ContentModule {}

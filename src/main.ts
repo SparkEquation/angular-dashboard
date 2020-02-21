@@ -5,15 +5,15 @@ import { AppModule } from "./app/app.module";
 import { environment } from "./environments/environment";
 
 if (environment.production) {
-  enableProdMode();
+    enableProdMode();
 }
 
 const bootstrap = () => platformBrowserDynamic().bootstrapModule(AppModule);
 
 if (environment.hmr) {
-  import("@ngxs/hmr-plugin").then(plugin => {
-    plugin.hmr(module, bootstrap).catch(err => console.error(err));
-  });
+    import("@ngxs/hmr-plugin").then(plugin => {
+        plugin.hmr(module, bootstrap).catch(err => console.error(err));
+    });
 } else {
-  bootstrap().catch(err => console.error(err));
+    bootstrap().catch(err => console.error(err));
 }

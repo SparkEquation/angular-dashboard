@@ -11,24 +11,51 @@ import { PanelsComponent } from "./component/panels/panels.component";
 import { WizardComponent } from "./component/wizard/wizard.component";
 
 const routes: Routes = [
-  {
-    path: "",
-    redirectTo: "home",
-    pathMatch: "full"
-  },
-  { path: "home", component: HomeComponent },
-  { path: "profile", component: ProfileComponent },
-  { path: "table", component: TableComponent },
-  { path: "notification", component: NotificationComponent },
-  { path: "alert", component: SweetAlertComponent },
-  { path: "settings", component: SettingsComponent },
-  { path: "components/price-table", component: PriceTableComponent },
-  { path: "components/panels", component: PanelsComponent },
-  { path: "components/wizard", component: WizardComponent }
+    {
+        path: "",
+        redirectTo: "home",
+        pathMatch: "full",
+        data: {
+            title: "Home"
+        }
+    },
+    { path: "home", component: HomeComponent, data: { title: "Home" } },
+    {
+        path: "profile",
+        component: ProfileComponent,
+        data: { title: "Profile" }
+    },
+    { path: "table", component: TableComponent, data: { title: "Table" } },
+    {
+        path: "notification",
+        component: NotificationComponent,
+        data: { title: "Home" }
+    },
+    { path: "alert", component: SweetAlertComponent, data: { title: "Alert" } },
+    {
+        path: "settings",
+        component: SettingsComponent,
+        data: { title: "Settings" }
+    },
+    {
+        path: "components/price-table",
+        component: PriceTableComponent,
+        data: { title: "Price Table" }
+    },
+    {
+        path: "components/panels",
+        component: PanelsComponent,
+        data: { title: "Panels" }
+    },
+    {
+        path: "components/wizard",
+        component: WizardComponent,
+        data: { title: "Home" }
+    }
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forChild(routes)],
+    exports: [RouterModule]
 })
 export class ContentRoutingModule {}

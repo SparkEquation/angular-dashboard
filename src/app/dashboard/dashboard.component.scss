@@ -1,14 +1,30 @@
+.mat-expansion-panel-spacing {
+    margin: 0;
+}
+
+.level2 {
+    .mat-expansion-panel-body {
+        padding: 0;
+    }
+}
+
+.level3 {
+    .mat-expansion-panel-body {
+        padding: 0;
+    }
+}
+
 .example-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .example-events {
-  width: 360px;
-  height: 200px;
-  overflow: auto;
-  border: 1px solid #555;
+    width: 360px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #555;
 }
